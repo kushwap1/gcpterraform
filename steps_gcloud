@@ -1,0 +1,4 @@
+gcloud config set account playground-s-11-ae1c053f
+gcloud auth activate-service-account --key-file=key.json
+gcloud beta compute ssh --zone "us-central1-c" "terraform-instance-1" --project "playground-s-11-ae1c053f"
+
